@@ -5,11 +5,11 @@ Created on Fri Dec 27 21:55:40 2019
 @author: stany
 """
 
+# This builds the static content to the project root 
 
-from flask_frozen import Freezer
-from app import app
+from project import main
 
 freezer = Freezer(app)
 
 if __name__ == '__main__':
-    freezer.freeze()
+    main.freezer.freeze()
